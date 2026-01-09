@@ -1,0 +1,78 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Card */
+#whole {
+    width: 360px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+#img {
+    text-align: center;
+}
+
+#img img {
+    width: 60px;
+    height: 60px;
+    background-color: #f4a261;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+p {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Section heading */
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f4a261;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Food item row */
+span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span + span {
+    float: right;
+    color: #f4a261;
+}
+
+/* Description */
+#whole p {
+    text-align: left;
+    font-size: 13px;
+    margin: 4px 0 10px;
+}
+
+/* Line */
+hr {
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 10px 0;
+}
