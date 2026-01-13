@@ -1,0 +1,93 @@
+
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(1, 46, 46);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.calender{
+    width: 400px;
+    padding: 32px;
+    height: 400px;
+    background: rgba(255, 255, 255,0.1);
+    border-radius: 25px ;
+    backdrop-filter: blue(15px);
+    border: 1px solid rgba(255, 255, 255,0.2);
+    box-shadow: 0 25px 50px -15px rgba(0, 0, 0,0.5);
+    margin: 10%;
+
+}
+
+
+.calender-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.nav-button span{
+    background-color: rgb(255, 255, 255,0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-left: 8px;
+    cursor:pointer ;
+    font: size 0.9rem;  
+
+}
+.nav-button span:hover{
+    background: rgba(255, 255, 255,0.25);
+}
+
+
+
+.calender-grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 12px;
+
+}
+.day{
+    color: rgba(255, 255, 255,0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.date{
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255,0.9);
+    font-weight: 350;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.data.active{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 255, 255,0.3);
+    font-weight: 700;
+    border-radius: 12px;
+    text-align: center;
+    
+    
+}
+.date:hover{
+    background: rgba(255, 255, 255,0.15);
+    transform: translateY(-2px);
+    color: wheat;
+}
