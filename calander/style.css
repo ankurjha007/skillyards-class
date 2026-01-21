@@ -83,6 +83,8 @@ body{
     font-weight: 700;
     border-radius: 12px;
     text-align: center;
+    padding-top: 2px;
+     
     
     
 }
@@ -91,3 +93,4 @@ body{
     transform: translateY(-2px);
     color: wheat;
 }
+
